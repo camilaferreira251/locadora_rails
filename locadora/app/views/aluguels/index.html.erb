@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Aluguels</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Veiculo</th>
+      <th>Usuario</th>
+      <th>Datainicio</th>
+      <th>Datafim</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @aluguels.each do |aluguel| %>
+      <tr>
+        <td><%= aluguel.veiculo_id %></td>
+        <td><%= aluguel.usuario_id %></td>
+        <td><%= aluguel.dataInicio %></td>
+        <td><%= aluguel.datafim %></td>
+        <td><%= link_to 'Show', aluguel %></td>
+        <td><%= link_to 'Edit', edit_aluguel_path(aluguel) %></td>
+        <td><%= link_to 'Destroy', aluguel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Aluguel', new_aluguel_path %>

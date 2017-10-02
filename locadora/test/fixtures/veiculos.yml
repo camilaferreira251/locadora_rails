@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  placa: MyString
+  marca: MyString
+  modelo: MyString
+  cor: MyString
+  arCondicionado: false
+  vidroEletrico: false
+  travaEletrica: false
+  cambioAutomatio: false
+  valorDiaria: 1.5
+
+two:
+  placa: MyString
+  marca: MyString
+  modelo: MyString
+  cor: MyString
+  arCondicionado: false
+  vidroEletrico: false
+  travaEletrica: false
+  cambioAutomatio: false
+  valorDiaria: 1.5

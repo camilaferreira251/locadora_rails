@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  veiculo_id: 
+  usuario_id: 
+  dataInicio: 2017-10-02
+  datafim: 2017-10-02
+
+two:
+  veiculo_id: 
+  usuario_id: 
+  dataInicio: 2017-10-02
+  datafim: 2017-10-02

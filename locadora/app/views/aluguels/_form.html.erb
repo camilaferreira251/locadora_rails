@@ -1,0 +1,34 @@
+<%= form_for(@aluguel) do |f| %>
+  <% if @aluguel.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@aluguel.errors.count, "error") %> prohibited this aluguel from being saved:</h2>
+
+      <ul>
+      <% @aluguel.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <div class="field">
+    <%= f.label :veiculo_id %><br>
+    <%= f.text_field :veiculo_id %>
+  </div>
+  <div class="field">
+    <%= f.label :usuario_id %><br>
+    <%= f.text_field :usuario_id %>
+  </div>
+  <div class="field">
+    <%= f.label :dataInicio %><br>
+    <%= f.date_select :dataInicio %>
+  </div>
+  <div class="field">
+    <%= f.label :datafim %><br>
+    <%= f.date_select :datafim %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
